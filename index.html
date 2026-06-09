@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano de 90 dias para o seu Propósito de Vida — A Alcateia de Leões</title>
+  <meta name="description" content="Um movimento de homens que pararam de viver no automático e começaram a caminhar no propósito que O PAPAI colocou dentro deles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ══════════════════════════════
+       TELA 1 — LANDING
+  ══════════════════════════════ -->
+  <div class="screen active" id="s-landing">
+
+    <div class="land-hero">
+      <div class="land-badge">Cordão de 3 Dobras Editora</div>
+      <h1 class="land-title">Plano de 90 dias<br>para o seu<br>Propósito de Vida</h1>
+      <div class="land-title-sub">A Alcateia de Leões</div>
+      <div class="land-divider"></div>
+      <p class="land-sub">Um movimento de homens que pararam de viver no automático e começaram a caminhar no propósito que O PAPAI colocou dentro deles.</p>
+    </div>
+
+    <div class="manifesto">
+      <p>"Não sou apenas um CPF — sou filho do PAPAI, co-herdeiro com Jesus Cristo e guiado pelo Espírito Santo para viver o extraordinário na Terra."</p>
+      <cite>— O milagre começa quando as desculpas terminam!</cite>
+    </div>
+
+    <div class="pilares">
+      <div class="pilar">
+        <div class="pilar-icon">✦</div>
+        <div class="pilar-title">Identidade</div>
+        <div class="pilar-desc">Saber quem você é antes do que você faz</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">♛</div>
+        <div class="pilar-title">Propósito</div>
+        <div class="pilar-desc">Viver o que O PAPAI colocou em você</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">❧</div>
+        <div class="pilar-title">Legado</div>
+        <div class="pilar-desc">Construir o que 1.000 gerações herdarão</div>
+      </div>
+    </div>
+
+    <div class="trial-box">
+      <div class="trial-title">Experimente por 7 dias</div>
+      <div class="trial-desc">Se fizer sentido na sua vida, você continua. Se não fizer, sai sem perguntas. Aqui não queremos quantidade — queremos leões.</div>
+      <div class="trial-price">
+        <span class="price-free">7 dias grátis</span>
+        <span class="price-after">depois R$ 197 · acesso completo</span>
+      </div>
+      <button class="btn-cta" onclick="goScreen('s-cadastro')">QUERO FAZER PARTE →</button>
+    </div>
+
+    <div class="land-footer">
+      Você chegou aqui pelo diagnóstico Da Morte Para a Vida?<br>
+      Seus dados de perfil podem ser importados automaticamente.<br><br>
+      Conteúdo proprietário · Cordão de 3 Dobras Editora · Todos os direitos reservados
+    </div>
+
+  </div><!-- /s-landing -->
+
+
+  <!-- ══════════════════════════════
+       TELA 2 — CADASTRO
+  ══════════════════════════════ -->
+  <div class="screen" id="s-cadastro">
+    <div class="form-screen">
+
+      <div class="form-step-label">Passo 1 de 2 · Cadastro</div>
+      <h2 class="form-title">Quem é você, leão?</h2>
+      <p class="form-sub">Estas informações personalizam seu plano e garantem suporte preciso ao longo dos 90 dias.</p>
+
+      <div class="field">
+        <label for="c-nome">Como quer ser chamado</label>
+        <input type="text" id="c-nome" placeholder="Seu nome ou apelido" autocomplete="given-name">
+      </div>
+      <div class="field">
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" placeholder="seu@email.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="c-whatsapp">WhatsApp</label>
+        <input type="tel" id="c-whatsapp" placeholder="(85) 99999-9999" autocomplete="tel">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="c-cidade">Cidade</label>
+          <input type="text" id="c-cidade" placeholder="Fortaleza" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="c-estado">Estado</label>
+          <input type="text" id="c-estado" placeholder="CE" maxlength="2" autocomplete="address-level1">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="c-idade">Idade</label>
+          <input type="number" id="c-idade" placeholder="34" min="18" max="90">
+        </div>
+        <div class="field">
+          <label for="c-civil">Estado civil</label>
+          <select id="c-civil">
+            <option value="">Selecione...</option>
+            <option>Solteiro</option>
+            <option>Namorando</option>
+            <option>Noivo</option>
+            <option>Casado</option>
+            <option>Divorciado</option>
+            <option>Viúvo</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="c-filhos">Filhos</label>
+          <select id="c-filhos">
+            <option value="">Selecione...</option>
+            <option>Nenhum</option>
+            <option>1 filho</option>
+            <option>2 filhos</option>
+            <option>3 ou mais</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-ocupacao">Ocupação</label>
+          <select id="c-ocupacao">
+            <option value="">Selecione...</option>
+            <option>Empreendedor</option>
+            <option>CLT</option>
+            <option>Autônomo</option>
+            <option>Servidor público</option>
+            <option>Em transição</option>
+            <option>Outro</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="c-senha">Senha de acesso</label>
+        <div class="pwd-field">
+          <input type="password" id="c-senha" placeholder="Mínimo 6 caracteres" autocomplete="new-password">
+          <button type="button" class="pwd-toggle" onclick="togglePwd('c-senha', this)">👁</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="c-senha2">Confirmar senha</label>
+        <div class="pwd-field">
+          <input type="password" id="c-senha2" placeholder="Repita a senha" autocomplete="new-password">
+          <button type="button" class="pwd-toggle" onclick="togglePwd('c-senha2', this)">👁</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="c-origem">Veio do diagnóstico Da Morte Para a Vida?</label>
+        <select id="c-origem">
+          <option value="">Selecione...</option>
+          <option value="sim">Sim — importar meu perfil</option>
+          <option value="nao">Não — fazer o diagnóstico agora</option>
+          <option value="refazer">Já fiz, mas quero refazer</option>
+        </select>
+      </div>
+
+      <button class="btn-cta" onclick="validarCadastro()">CONTINUAR →</button>
+      <button class="btn-outline" onclick="goScreen('s-landing')">← Voltar</button>
+      <p class="terms">Seus dados são protegidos pela LGPD · Não compartilhamos com terceiros</p>
+
+    </div>
+  </div><!-- /s-cadastro -->
+
+
+  <!-- ══════════════════════════════
+       TELA 3 — DIAGNÓSTICO
+  ══════════════════════════════ -->
+  <div class="screen" id="s-diag">
+    <div class="diag-screen">
+
+      <div class="form-step-label">Passo 2 de 2 · Diagnóstico</div>
+      <h2 class="form-title">As 15 perguntas</h2>
+      <p class="form-sub">Responda com honestidade — não pelo que você gostaria que fosse verdade, mas pelo que é verdade hoje.</p>
+
+      <div class="diag-intro">
+        <strong>Escala 1 a 5:</strong> 1 = quase nunca · 5 = sempre.<br>
+        As perguntas abertas são para você — não há resposta certa.
+      </div>
+
+      <!-- EIXO 1 -->
+      <div class="eixo-header">
+        <div class="eixo-num">1</div>
+        <div class="eixo-name">O PAPAI, Jesus Cristo e o Espírito Santo</div>
+      </div>
+
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P01.</strong> Quando você acorda, qual é o seu primeiro pensamento — e Ele está nele?</div>
+        <div class="scale-row">
+          <span class="scale-label">Nunca</span>
+          <button class="scale-btn" onclick="selScale(this,'p01',1)">1</button>
+          <button class="scale-btn" onclick="selScale(this,'p01',2)">2</button>
+          <button class="scale-btn" onclick="selScale(this,'p01',3)">3</button>
+          <button class="scale-btn" onclick="selScale(this,'p01',4)">4</button>
+          <button class="scale-btn" onclick="selScale(this,'p01',5)">5</button>
+          <span class="scale-label">Sempre</span>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P02.</strong> Você ora ou apenas pede? Há diferença prática na sua vida entre os dois?</div>
+        <div class="scale-row">
+          <span class="scale-label">Nunca</span>
+          <button class="scale-btn" onclick="selScale(this,'p02',1)">1</button>
+          <button class="scale-btn" onclick="selScale(this,'p02',2)">2</button>
+          <button class="scale-btn" onclick="selScale(this,'p02',3)">3</button>
+          <button class="scale-btn" onclick="selScale(this,'p02',4)">4</button>
+          <button class="scale-btn" onclick="selScale(this,'p02',5)">5</button>
+          <span class="scale-label">Sempre</span>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P03.</strong> Quando tudo vai bem, você ainda busca O PAPAI ou só O busca na crise?</div>
+        <div class="scale-row">
+          <span class="scale-label">Nunca</span>
+          <button class="scale-btn" onclick="selScale(this,'p03',1)">1</button>
+          <button class="scale-btn" onclick="selScale(this,'p03',2)">2</button>
+          <button class="scale-btn" onclick="selScale(this,'p03',3)">3</button>
+          <button class="scale-btn" onclick="selScale(this,'p03',4)">4</button>
+          <button class="scale-btn" onclick="selScale(this,'p03',5)">5</button>
+          <span class="scale-label">Sempre</span>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P04.</strong> O Espírito Santo já te disse algo que você ignorou deliberadamente? O que aconteceu depois?</div>
+        <textarea class="open-answer" id="p04" placeholder="Escreva livremente..."></textarea>
+      </div>
+
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P05.</strong> Se O PAPAI te fizesse uma pergunta hoje, qual você teria mais medo de responder?</div>
+        <textarea class="open-answer" id="p05" placeholder="Não existe resposta errada aqui..."></textarea>
+      </div>
+
+      <hr class="eixo-divider">
+
+      <!-- EIXO 2 -->
+      <div class="eixo-header">
+        <div class="eixo-num">2</div>
+        <div class="eixo-name">Relacionamento e Aliança</div>
+      </div>
+
+      <div class="bifurcacao">
+        <div class="pergunta-label" style="margin-bottom:0.875rem">Você é casado ou tem relacionamento sério?</div>
+        <button class="bif-btn" id="bif-sim" onclick="setBif('sim')">
+          <span class="bif-dot"></span>
+          Sim — casado ou relacionamento comprometido
+        </button>
+        <button class="bif-btn" id="bif-nao" onclick="setBif('nao')">
+          <span class="bif-dot"></span>
+          Não — solteiro ou em transição
+        </button>
+      </div>
+
+      <div id="eixo2-casado" style="display:none">
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P06.</strong> Seu cônjuge conhece o ser humano real que você é, ou a versão que você permite?</div>
+          <div class="scale-row">
+            <span class="scale-label">Nunca</span>
+            <button class="scale-btn" onclick="selScale(this,'p06',1)">1</button>
+            <button class="scale-btn" onclick="selScale(this,'p06',2)">2</button>
+            <button class="scale-btn" onclick="selScale(this,'p06',3)">3</button>
+            <button class="scale-btn" onclick="selScale(this,'p06',4)">4</button>
+            <button class="scale-btn" onclick="selScale(this,'p06',5)">5</button>
+            <span class="scale-label">Sempre</span>
+          </div>
+        </div>
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P07.</strong> Quando foi a última vez que você surpreendeu seu cônjuge sem nenhum motivo externo?</div>
+          <textarea class="open-answer" id="p07" placeholder="Seja honesto..."></textarea>
+        </div>
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P08.</strong> Seu cônjuge conseguiria descrever o seu propósito de vida com as próprias palavras?</div>
+          <div class="scale-row">
+            <span class="scale-label">Nunca</span>
+            <button class="scale-btn" onclick="selScale(this,'p08',1)">1</button>
+            <button class="scale-btn" onclick="selScale(this,'p08',2)">2</button>
+            <button class="scale-btn" onclick="selScale(this,'p08',3)">3</button>
+            <button class="scale-btn" onclick="selScale(this,'p08',4)">4</button>
+            <button class="scale-btn" onclick="selScale(this,'p08',5)">5</button>
+            <span class="scale-label">Sempre</span>
+          </div>
+        </div>
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P09.</strong> O que você tem exigido do seu cônjuge que você mesmo não tem entregado?</div>
+          <textarea class="open-answer" id="p09" placeholder="Esta pergunta exige coragem..."></textarea>
+        </div>
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P10.</strong> Se seu cônjuge te descrevesse para seus filhos daqui a 20 anos, o que você quer que ele(a) diga?</div>
+          <textarea class="open-answer" id="p10" placeholder="Escreva a herança que quer deixar..."></textarea>
+        </div>
+      </div>
+
+      <div id="eixo2-solteiro" style="display:none">
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P06b.</strong> O que você ainda não resolveu em si mesmo que impede uma entrega real a outra pessoa?</div>
+          <textarea class="open-answer" id="p06b" placeholder="Seja honesto consigo mesmo..."></textarea>
+        </div>
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P07b.</strong> Você busca um parceiro(a) ou busca uma audiência para a sua vida?</div>
+          <div class="scale-row">
+            <span class="scale-label">Audiência</span>
+            <button class="scale-btn" onclick="selScale(this,'p07b',1)">1</button>
+            <button class="scale-btn" onclick="selScale(this,'p07b',2)">2</button>
+            <button class="scale-btn" onclick="selScale(this,'p07b',3)">3</button>
+            <button class="scale-btn" onclick="selScale(this,'p07b',4)">4</button>
+            <button class="scale-btn" onclick="selScale(this,'p07b',5)">5</button>
+            <span class="scale-label">Parceiro</span>
+          </div>
+        </div>
+        <div class="pergunta">
+          <div class="pergunta-label"><strong>P08b.</strong> O que seu relacionamento com O PAPAI tem revelado sobre quem você precisa ser?</div>
+          <textarea class="open-answer" id="p08b" placeholder="Escreva o que Ele tem mostrado..."></textarea>
+        </div>
+      </div>
+
+      <hr class="eixo-divider">
+
+      <!-- EIXO 3 -->
+      <div class="eixo-header">
+        <div class="eixo-num">3</div>
+        <div class="eixo-name">O Superpoder Escondido</div>
+      </div>
+
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P11.</strong> O que você faz que o tempo passa e você não percebe?</div>
+        <textarea class="open-answer" id="p11" placeholder="Qual atividade te faz perder a noção do tempo?"></textarea>
+      </div>
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P12.</strong> Pelo que as pessoas te pedem ajuda mesmo sem você se oferecer?</div>
+        <textarea class="open-answer" id="p12" placeholder="O que as pessoas enxergam in você..."></textarea>
+      </div>
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P13.</strong> Se dinheiro não existisse e você precisasse contribuir com o mundo, o que seria?</div>
+        <textarea class="open-answer" id="p13" placeholder="Remova o filtro financeiro por um momento..."></textarea>
+      </div>
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P14.</strong> Qual foi o momento da sua vida em que você se sentiu mais VIVO — não mais feliz, mais VIVO?</div>
+        <textarea class="open-answer" id="p14" placeholder="Descreva com detalhes..."></textarea>
+      </div>
+      <div class="pergunta">
+        <div class="pergunta-label"><strong>P15.</strong> O que você leva para o túmulo se não agir até o fim da sua vida?</div>
+        <textarea class="open-answer" id="p15" placeholder="Esta é a pergunta mais importante..."></textarea>
+      </div>
+
+      <button class="btn-cta" onclick="calcularDiag()">VER MEU DIAGNÓSTICO →</button>
+      <button class="btn-outline" onclick="goScreen('s-cadastro')">← Voltar</button>
+
+    </div>
+  </div><!-- /s-diag -->
+
+
+  <!-- ══════════════════════════════
+       TELA 4 — RESULTADO
+  ══════════════════════════════ -->
+  <div class="screen" id="s-resultado">
+    <div class="result-screen">
+      <div id="res-conteudo"></div>
+      <div class="cta-section">
+        <div class="cta-title">Seu Plano de 90 dias está pronto</div>
+        <p class="cta-desc">Com base no seu diagnóstico, montamos um plano personalizado. Você tem <strong>7 dias gratuitos</strong> para viver isso na prática. Se fizer sentido, você continua.</p>
+        <button class="btn-cta" onclick="goPlano()">INICIAR MEU PLANO DE 90 DIAS →</button>
+      </div>
+    </div>
+  </div><!-- /s-resultado -->
+
+
+  <!-- ══════════════════════════════
+       TELA 5 — PLANO 90 DIAS
+  ══════════════════════════════ -->
+  <div class="screen" id="s-plano">
+    <div class="plano-screen">
+
+      <div class="plano-label">A Alcateia de Leões</div>
+      <h2 class="plano-title" id="plano-title">Plano de 90 dias</h2>
+      <div class="plano-app-name">Plano de 90 dias para o seu Propósito de Vida</div>
+      <p class="plano-sub" id="plano-sub"></p>
+
+      <div class="trial-alert">
+        <span class="trial-days">7</span>
+        <div class="trial-msg">dias de experiência gratuita restantes<br><strong>No dia 7 você decide: fica ou sai.</strong></div>
+      </div>
+
+      <div class="ancara-box">
+        <div class="ancara-label">Pergunta âncora diária</div>
+        <div class="ancara-text">"O que estou fazendo hoje tem me levado a cumprir o meu propósito de vida?"</div>
+      </div>
+
+      <div class="fase-tabs">
+        <button class="fase-tab active" onclick="showFase(0,this)">Fase 1<br><small>Dias 1–30</small></button>
+        <button class="fase-tab" onclick="showFase(1,this)">Fase 2<br><small>Dias 31–60</small></button>
+        <button class="fase-tab" onclick="showFase(2,this)">Fase 3<br><small>Dias 61–90</small></button>
+      </div>
+
+      <div id="fases-container"></div>
+
+      <div class="assinatura-box">
+        <div class="ass-app-name">Plano de 90 dias para o seu Propósito de Vida</div>
+        <p class="ass-label">Acesso completo · suporte personalizado · comunidade da Alcateia</p>
+        <div class="ass-price">R$ 197</div>
+        <p class="ass-detalhe">acesso completo · primeiros 100 leões</p>
+        <button class="btn-cta" onclick="processarPagamento()">CONFIRMAR MINHA VAGA NA ALCATEIA →</button>
+      </div>
+
+      <div class="rodape">"O milagre começa quando as desculpas terminam!"</div>
+
+    </div>
+  </div><!-- /s-plano -->
+
+</div><!-- /app -->
+
+<script src="scripts/app.js"></script>
+</body>
+</html>

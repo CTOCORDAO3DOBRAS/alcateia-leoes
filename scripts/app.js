@@ -459,5 +459,5 @@ function showFase(idx, btn) {
 ────────────────────────────── */
 function processarPagamento() {
   // TODO: integrar Hotmart ou Stripe
-  alert('Integração de pagamento a configurar. PIX ou cartão via Hotmart / Stripe.');
+  window.open('https://pay.hotmart.com/Y106235644N','_blank');
 }

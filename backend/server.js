@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, '..')));
 app.use('/api/cadastro', require('./routes/cadastro'));
 app.use('/api/plano',    require('./routes/plano'));
 app.use('/api/login',    require('./routes/login'));
+app.use('/api/missao',   require('./routes/missao'));
 
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, '..', 'index.html'));

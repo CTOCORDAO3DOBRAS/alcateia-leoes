@@ -24,3 +24,5 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`Alcateia de Leões rodando em http://localhost:${PORT}`);
 });
+
+module.exports = app;

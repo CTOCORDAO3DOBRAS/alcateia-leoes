@@ -458,6 +458,5 @@ function showFase(idx, btn) {
    PAGAMENTO
 ────────────────────────────── */
 function processarPagamento() {
-  // TODO: integrar Hotmart ou Stripe
   window.open('https://pay.hotmart.com/Y106235644N','_blank');
 }
